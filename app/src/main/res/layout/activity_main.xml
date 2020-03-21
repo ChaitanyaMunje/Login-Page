@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:id="@+id/relative"
+        android:elevation="20dp"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/logo"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_adb_black_24dp"
+            android:layout_margin="40dp"
+            android:padding="0dp"
+           android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textAlignment="textEnd"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@id/logo"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgetpasstxt"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circlebutton"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/chin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="20dp"
+        android:layout_below="@id/relative"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:hint="Email"
+        android:background="@drawable/emailbuttoncircle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/chin"
+        android:id="@+id/password"
+        android:elevation="20dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/emailbuttoncircle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circlebutton"
+        android:text="Signup"
+        android:onClick="signup"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ?"
+        android:textAlignment="textEnd"
+        android:layout_below="@id/password"
+        android:layout_marginRight="20dp"
+        android:onClick="forgetpass"
+        android:layout_marginTop="10dp"
+        android:id="@+id/forgetpasstxt"/>
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_below="@id/forgetpasstxt"
+        android:id="@+id/progressbar"
+        />
+
+
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:id="@+id/relative"
+        android:elevation="20dp"
+
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/logo"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_adb_black_24dp"
+            android:layout_margin="40dp"
+            android:padding="0dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:id="@+id/user"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/logo"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Log OUt"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="20dp"
+    android:onClick="logout"
+        android:layout_below="@id/relative"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circlebutton"
+
+    />
+
+</RelativeLayout>

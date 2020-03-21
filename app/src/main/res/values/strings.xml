@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assignment </string>
+    <string name="minimum_password">Password must not be less than 6 digits</string>
+    <string name="auth_failed">Enter correct Email and Password</string>
+</resources>
